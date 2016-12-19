@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="liwei.example.com.camerademo.MainActivity">
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="sysBitmap"
+       android:text="调用系统拍照bitmap"
+       />
+ <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="sysUri"
+       android:text="调用系统拍照uri"
+       />
+
+<Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="myPicture"
+       android:text="调用自己拍照"
+       />
+<Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="sysAlbums"
+       android:text="调用系统相册"
+       />
+<Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="myAlbums"
+       android:text="调用自己相册"
+       />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView" />
+
+
+</LinearLayout>
